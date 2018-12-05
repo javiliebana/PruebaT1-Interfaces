@@ -28,7 +28,7 @@ private AnchorPane mypane;
 		mypane = (AnchorPane) loader.load();
 		
 		// añade la escena al stage y la titula
-		stage.setTitle("Ventana Main");
+		stage.setTitle("javiliebana");
 		stage.setScene(new Scene(mypane));
 		
 		stage.show();

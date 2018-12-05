@@ -18,25 +18,18 @@ public class ControlFX {
 	@FXML
 	ImageView logoLabel;
 	@FXML
-	public Button closeButton;
 	public Button openButton;
-	
-	 
-	
-	
-	
 
-	
-//	public void initialize() {
-//		openButton.setTooltip(new Tooltip("Tooltip for Button"));
-//		FadeTransition fadeTransition = new FadeTransition(
-//			Duration.seconds(2), logoLabel);
-//			logoLabel.setVisible(true);
-//			fadeTransition.setFromValue(0);
-//			fadeTransition.setToValue(1);
-//			fadeTransition.play();
-//					
-//	}
+	public void initialize() {
+		openButton.setTooltip(new Tooltip("Tooltip for Button"));
+		FadeTransition fadeTransition = new FadeTransition(
+			Duration.seconds(2), logoLabel);
+			logoLabel.setVisible(true);
+			fadeTransition.setFromValue(0);
+			fadeTransition.setToValue(1);
+			fadeTransition.play();
+					
+	}
 	
 	private Stage stage;
 	@FXML
@@ -56,10 +49,5 @@ public class ControlFX {
 	    }
 	}
 	
-	@FXML
-	private void closeStage() {
-		Stage stage = (Stage) closeButton.getScene().getWindow();
-	    stage.close();
-	}
 	
 }
